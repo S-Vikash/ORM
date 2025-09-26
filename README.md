@@ -34,9 +34,11 @@ class Car(models.Model):
     carNum = models.CharField(primary_key=True,max_length=20)
     buyerName = models.CharField(max_length=20)
     carYear = models.IntegerField()
+    carColor = models.CharField(max_length=20,default='Red')
+
 
 class CarAdmin(admin.ModelAdmin):
-    list_display = ['carName','carNum','buyerName','carYear']
+    list_display = ['carName','carNum','buyerName','carYear','carColor']
 
 
 admin.py
@@ -49,7 +51,7 @@ admin.site.register(Car,CarAdmin)
 
 
 ## OUTPUT
-![alt text](image.png)
+![alt text](orm.png)
 
 
 ## RESULT
