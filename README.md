@@ -51,6 +51,7 @@ admin.site.register(Car,CarAdmin)
 
 
 ## OUTPUT
+![alt text](orm.png)
 
 
 
